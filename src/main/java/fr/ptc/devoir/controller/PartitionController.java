@@ -17,7 +17,9 @@ import fr.ptc.devoir.exception.PartitionException;
 
 /**
  * @author Sochfy  
- * Service qui permet de partionner une liste d'objet selon une taille 
+ * Service  « partition » qui prend un paramètre 
+ * « liste » et un paramètre « taille » et retourne une liste de sous liste,
+ * où chaque sous liste a au maximum « taille » éléments.
  *
  */
 public class PartitionController {
@@ -55,6 +57,7 @@ public class PartitionController {
 	}
 
 	/**
+	 * Cette méthode peut être implementer dans une couche Service
 	 * @param <T>
 	 * @param elements
 	 * @param sublistsSize
