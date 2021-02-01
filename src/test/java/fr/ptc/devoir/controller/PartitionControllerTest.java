@@ -22,7 +22,7 @@ public class PartitionControllerTest {
 	}
 
 	@Test
-	public void test_GivenListOfInteger() {
+	public void test_partitionning_with_listOfInteger() {
 		// Given
 		List<Integer> elements = new ArrayList<Integer>();
 		elements = Arrays.asList(1, 2, 3, 4);
@@ -34,7 +34,7 @@ public class PartitionControllerTest {
 	}
 
 	@Test
-	public void test_GivenListOfString() {
+	public void test_partitionning_with_listOfString() {
 		// Given
 		List<String> elements = new ArrayList<String>();
 		List<List<String>> expectedSubLists = new ArrayList<List<String>>();
@@ -47,7 +47,7 @@ public class PartitionControllerTest {
 	}
 
 	@Test
-	public void test_GivenListOfListOfString() {
+	public void test_partitionning_with_listOfString() {
 		// Given
 		List<List<String>> elements = new ArrayList<List<String>>();
 		elements = Arrays.asList(Arrays.asList("a", "2", "g"), Arrays.asList("4", "E", "*"));
@@ -59,7 +59,7 @@ public class PartitionControllerTest {
 	}
 
 	@Test
-	public void test_GivenEmptyList() {
+	public void test_partitionning_with_emptyList() {
 		// Given
 		List<String> elements = Collections.emptyList();
 		// When
@@ -73,7 +73,7 @@ public class PartitionControllerTest {
 	}
 
 	@Test(expected = PartitionException.class)
-	public void test_GivenSizeEqualZero() {
+	public void test_partitionning_with_SizeEqualZero() {
 		// Given
 
 		List<String> elements = new ArrayList<String>();
@@ -85,7 +85,7 @@ public class PartitionControllerTest {
 	}
 
 	@Test
-	public void test_GivenListSizeEqualSublistsSize() {
+	public void test_partitionning_with_listSizeEqualSublistsSize() {
 
 		// Given
 		List<String> elements = new ArrayList<String>();
